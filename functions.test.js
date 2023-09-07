@@ -2,6 +2,7 @@ const functions = require('./functions');
 
 test('add 1 and 1 to equal 2', ()=>{
     expect(functions.add(1,1)).not.toBe(3);
+    expect(functions.add(1,1)).toBe(2);
 });
 
 test('should be null', ()=>{
@@ -17,7 +18,7 @@ test('should be kodego object', ()=>{
 });
 
 test('should be under 1600', ()=>{
-    const num1= 700; 
+    const num1= 700;
     const num2= 600;
     expect(num1+num2).toBeLessThan(1600);
 });
@@ -37,3 +38,4 @@ test('Use fetch should be leanne Graham', ()=>{
         expect(data.name).toEqual('Leanne Graham');
     })
 });
+
